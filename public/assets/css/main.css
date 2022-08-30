@@ -26,9 +26,10 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #B9CDDA;
-  --color-secondary: #D7DAE5;
-  --color-background: #6B7D7D;
+  --color-primary: #9AC2C9;
+  --color-secondary: #B9D8C2;
+  --color-background: #4A5043;
+  --color-hover: #8AA1B1;
 }
 
 /* Smooth scroll behavior */
@@ -142,7 +143,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #94B2C7;
+  background: var(--color-hover);
 }
 
 /*--------------------------------------------------------------
@@ -915,7 +916,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #94B2C7;
+  background: var(--color-hover);
 }
 
 .gallery-single .portfolio-description h2 {
@@ -1285,7 +1286,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #94B2C7;
+  background: var(--color-hover);
 }
 
 @media (max-width: 768px) {

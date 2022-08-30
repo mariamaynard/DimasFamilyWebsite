@@ -1,8 +1,13 @@
 /**
+
 * Template Name: PhotoFolio - v1.0.0
+
 * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+
 * Author: BootstrapMade.com
+
 * License: https://bootstrapmade.com/license/
+
 */
 
 /*--------------------------------------------------------------
@@ -11,7 +16,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
@@ -19,8 +26,9 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-primary: #B9CDDA;
+  --color-secondary: #D7DAE5;
+  --color-background: #6B7D7D;
 }
 
 /* Smooth scroll behavior */
@@ -34,7 +42,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-color: var(--color-background);
 }
 
 a {
@@ -43,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #94B2C7;
   text-decoration: none;
 }
 
@@ -134,7 +142,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #94B2C7;
 }
 
 /*--------------------------------------------------------------
@@ -319,7 +327,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 30px 0;
-  background-color: #000;
+  background-color: var(--color-background);
 }
 
 .header .logo {
@@ -424,7 +432,7 @@ h6 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -460,11 +468,11 @@ h6 {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: #fff;
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -476,7 +484,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -489,13 +497,12 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -554,7 +561,7 @@ h6 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -568,8 +575,8 @@ h6 {
     border: 1px solid black;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -811,14 +818,20 @@ h6 {
   width: 100%;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.gallery-single
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.gallery-single
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
@@ -848,7 +861,6 @@ h6 {
 }
 
 @media (max-width: 575px) {
-
   .gallery-single .swiper-button-prev,
   .gallery-single .swiper-button-next {
     display: none;
@@ -903,7 +915,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #94B2C7;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -1073,7 +1085,7 @@ h6 {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1129,7 +1141,7 @@ h6 {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1181,7 +1193,7 @@ h6 {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 10px 35px;
@@ -1190,7 +1202,7 @@ h6 {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: rgba(39, 167, 118, 0.8);
 }
 
@@ -1220,7 +1232,7 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: #000;
+  background: var(--color-background);
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;
@@ -1273,7 +1285,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #94B2C7;
 }
 
 @media (max-width: 768px) {

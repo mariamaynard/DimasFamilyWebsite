@@ -30,6 +30,8 @@
   --color-secondary: #B9D8C2;
   --color-background: #4A5043;
   --color-hover: #8AA1B1;
+  --color-christmas: #eb0000;
+  --color-christmas-hover: #7c0000;
 }
 
 /* Smooth scroll behavior */
@@ -44,6 +46,13 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   background-color: var(--color-background);
+}
+
+.h_iframe iframe {
+  width:100%;
+}
+.h_iframe {
+  width:100%;
 }
 
 a {
@@ -530,7 +539,7 @@ h6 {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--color-background);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -988,18 +997,18 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# wishlists Section
 --------------------------------------------------------------*/
-.services .service-item {
+.wishlists .wishlist-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: var(--color-secondary);
+  background: var(--color-christmas);
   height: 100%;
   overflow: hidden;
   z-index: 1;
 }
 
-.services .service-item:before {
+.wishlists .wishlist-item:before {
   content: "";
   position: absolute;
   background: #1d1f20;
@@ -1008,8 +1017,8 @@ h6 {
   z-index: -1;
 }
 
-.services .service-item i {
-  background: var(--color-primary);
+.wishlists .wishlist-item i {
+  background: var(--color-christmass);
   color: #fff;
   font-size: 24px;
   transition: 0.3s;
@@ -1021,25 +1030,25 @@ h6 {
   border-radius: 50%;
 }
 
-.services .service-item h4 {
+.wishlists .wishlist-item h4 {
   font-weight: 600;
   margin: 15px 0 0 0;
   transition: 0.3s;
   font-size: 20px;
 }
 
-.services .service-item h4 a {
+.wishlists .wishlist-item h4 a {
   color: #fff;
 }
 
-.services .service-item p {
+.wishlists .wishlist-item p {
   line-height: 24px;
   font-size: 14px;
   margin: 15px 0 0 0;
 }
 
-.services .service-item:hover:before {
-  background: var(--color-primary);
+.wishlists .wishlist-item:hover:before {
+  background: var(--color-christmas-hover);
   right: 0;
   top: 0;
   width: 100%;
@@ -1047,12 +1056,12 @@ h6 {
   border-radius: 0px;
 }
 
-.services .service-item:hover h4 a,
-.services .service-item:hover p {
+.wishlists .wishlist-item:hover h4 a,
+.wishlists .wishlist-item:hover p {
   color: #fff;
 }
 
-.services .service-item:hover i {
+.wishlists .wishlist-item:hover i {
   background: #fff;
   color: var(--color-primary);
 }

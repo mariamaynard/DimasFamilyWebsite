@@ -1303,6 +1303,27 @@ h6 {
     font-size: 32px;
   }
 }
+/*--------------------------------------------------------------
+# Link button
+--------------------------------------------------------------*/
+
+.btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.btn-get-started:hover {
+  background: var(--color-hover);
+}
 
 /*--------------------------------------------------------------
 # Footer
